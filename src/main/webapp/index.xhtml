@@ -14,7 +14,7 @@
                     <h:commandLink id="lien_en" value="#{msg['welcome.langue2']}" action="#{changeLocale.setEnglishLocale}"/>
                 </h:panelGrid>
                 <h1><h:outputText value="#{msg['welcome.titre']}" /></h1>
-                <h:commandLink value="#{msg['welcome.page1']}" action="page1"/>
+                <h:commandLink value="#{msg['welcome.page1']}" action="page1?faces-redirect=true"/>
             </h:form>
         </h:body>
     </f:view>
