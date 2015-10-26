@@ -1,11 +1,11 @@
 package utils;
 
 import java.io.Serializable;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
 
-@ManagedBean
 @SessionScoped
+@Named
 public class ChangeLocale implements Serializable {
 
     private String locale = "fr";
